@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/03/15 20:20:39.000.177,=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/15 20:24:13.000.890,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Gabriel\Desktop\DEV\Projects_delphi\TesteUnitarios\TesteRep\frmMain.pas</Transaction>
+    <Transaction>2025/03/15 20:24:13.000.890,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Gabriel\Desktop\DEV\Projects_delphi\TesteUnitarios\TesteRep\frmMain.dfm</Transaction>
+    <Transaction>2025/03/15 20:25:00.000.131,=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/15 20:25:35.000.924,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Gabriel\Desktop\DEV\Projects_delphi\TesteUnitarios\TesteRep\calculadora.pas</Transaction>
+    <Transaction>2025/03/15 20:30:57.000.046,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Gabriel\Desktop\DEV\Projects_delphi\TesteUnitarios\TesteRep\WsProject.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

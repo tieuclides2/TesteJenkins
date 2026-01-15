@@ -1,0 +1,15 @@
+Compilação de 12/01/2026 15:31:34 iniciada.
+__________________________________________________
+Projeto "C:\DelphiCompiler\testeJenkins\Project1.dproj" (Build destino(s)):
+
+C:\DelphiCompiler\testeJenkins\Project1.dproj : error MSB4057: O destino "Build" não existe no projeto.
+
+Projeto de compilação pronto "Project1.dproj" -- FALHA.
+
+FALHA da compilação.
+
+C:\DelphiCompiler\testeJenkins\Project1.dproj : error MSB4057: O destino "Build" não existe no projeto.
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:00.20

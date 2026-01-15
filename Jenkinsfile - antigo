@@ -1,0 +1,49 @@
+pipeline {
+  agent { label 'delphi-qa' }
+
+  options {
+    timestamps()
+    disableConcurrentBuilds()
+  }
+
+  environment {
+    DCC32 = 'C:\\Program Files (x86)\\Embarcadero\\Studio\\23.0\\bin\\dcc32.exe'
+  }
+
+  stages {
+    stage('Checkout') {
+      steps {
+        checkout scm
+      }
+    }
+
+    stage('Build (Win32)') {
+      steps {
+        bat """
+          cd /d %WORKSPACE%
+          if not exist build mkdir build
+
+          "%DCC32%" -B -Q -E.\\build "Project1.dpr"
+          if errorlevel 1 exit /b 1
+        """
+      }
+    }
+
+    stage('Run') {
+      steps {
+        bat """
+          cd /d %WORKSPACE%
+          .\\build\\Project1.exe
+          exit /b %ERRORLEVEL%
+        """
+      }
+    }
+  }
+
+  post {
+    always {
+      archiveArtifacts artifacts: 'build/**/*', fingerprint: true
+      cleanWs(deleteDirs: true, disableDeferredWipeout: true)
+    }
+  }
+}
