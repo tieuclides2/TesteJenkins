@@ -5,8 +5,7 @@ pipeline {
     timestamps()
     disableConcurrentBuilds()
 
-    // Opcional (recomendado): evita acumular builds antigos no Jenkins
-    // Mantém os últimos 20 builds (ajuste como quiser)
+    // Opcional: evita acumular builds antigos no Jenkins
     buildDiscarder(logRotator(numToKeepStr: '20'))
   }
 
@@ -80,7 +79,7 @@ pipeline {
   post {
     always {
       archiveArtifacts artifacts: '**\\Win32\\Release\\**\\*', fingerprint: true
-      rem Workspace mantido (sem cleanWs)
+      // Workspace mantido (sem cleanWs)
     }
   }
 }
